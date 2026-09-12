@@ -19,7 +19,7 @@ public class Product {
     @Column(nullable = false)
     private Double price;
     @Lob
-    @Column(name = "image_data", columnDefinition = "VARBINARY(MAX)")
+    @Column(name = "image_data")
     private byte[] imageData;
 
     public byte[] getImageData() { return imageData; }
